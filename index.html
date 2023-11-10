@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="" method="post" id="form">
+        <h2 class="center">Lets Record</h2>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" placeholder="Enter the Record Date">
+
+        <label for="typeofBudget">Income or Expense</label>
+        <select id="typeofBudget" name="typeofBudget">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+
+        <label for="topic">Topic of Budget</label>
+        <input type="text" id="topic" name="topic" placeholder="Enter the Topic">
+
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" name="amount" placeholder="Amount of Money" min="0">
+
+        <button id="record-btn">Record</button>
+    </form>
+    <button id="view-record">View Old Records</button>
+
+    <table class="income">
+        <thead>
+            <tr>
+                <td></td>
+                <td>Income</td>
+                <td>Expense</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+    <button class="evaluate">Evaluate</button>
+    <button id="to-form">Back to Add New Record</button>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

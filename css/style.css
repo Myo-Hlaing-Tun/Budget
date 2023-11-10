@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 30%;
+    border: none;
+    box-shadow: 0 0 20px rgb(0,0,0,0.7);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 1.5rem;
+}
+@media(max-width: 1000px){
+    form{
+        width: 40%;
+    }
+}
+@media(max-width: 750px){
+    form{
+        width: 325px;
+    }
+}
+@media(max-width: 350px){
+    form{
+        width: 98%;
+    }
+}
+.center{
+    text-align: center;
+}
+h2{
+    margin-bottom: 1rem;
+}
+label,input,select{
+    display: block;
+    width: 95%;
+    margin-bottom: 0.725rem;
+}
+label{
+    margin-bottom: 0.25rem;
+}
+input,select{
+    padding: 8px 6px;
+}
+input,select:focus{
+    outline: none;
+}
+select{
+    margin-bottom: 1rem;
+}
+button{
+    width: 95%;
+    padding: 10px 20px;
+}
+#view-record{
+    display: block;
+    width: 20%;
+    box-shadow: 0 0 20px rgb(0,0,0,0.7);
+}
+@media (max-width: 750px){
+    #view-record{
+        width: 30%;
+    }
+}
+@media (max-width: 550px){
+    #view-record{
+        width: 50%;
+    }
+}
+@media (max-width: 300px){
+    #view-record{
+        width: 70%;
+    }
+}
+table{
+    display: none;
+    width: 50%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 20px rgb(0,0,0,0.7);
+}
+tr td:first-child{
+    padding-left: 5px;
+    width: 35%;
+    text-align: left;
+    word-break: break-all;
+}
+tr td:last-child{
+    padding-right: 5px;
+    width: 35%;
+    text-align: right;
+    word-break: break-all;
+}
+td{
+    border: 1px solid black;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+}
+.red{
+    color: red;
+}
+.evaluate{
+    display: none;
+    margin-bottom: 1em;
+    width: 50%;
+}
+#to-form{
+    display: none;
+    width: 50%;
+    box-shadow: 0 0 20px rgb(0,0,0,0.7);
+}
